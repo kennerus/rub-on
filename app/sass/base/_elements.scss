@@ -1,0 +1,159 @@
+$gray: #a8a8a8;
+$lightGray: #f0f0f0;
+$red: #ff564e;
+$blue: #4d8eff;
+$black: #262626;
+
+.btn {
+	padding: 10px 24px;
+	font-weight: 500;
+	color: white;
+	background-color: transparent;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	&:hover, &:active, &:focus {
+		color: white;
+	}
+
+	&_modal {
+		width: 49%;
+		color: $black;
+		border: 1px solid $gray;
+	}
+
+	&_modal-red {
+		width: 49%;
+		color: white;
+		background-color: $red;
+		border: 1px solid $red;
+	}
+
+	&_red {
+		color: white;
+		background-color: $red;
+		border: none;
+	}
+
+	&_blue {
+		background-color: $blue;
+	}
+
+	&_reg {
+		display: flex;
+		align-items: center;
+		color: $gray;
+
+		&:hover, &:active, &:focus {
+			color: $gray;
+		}
+	}
+
+	&_enter {
+		color: $red;
+
+		&:hover, &:active, &:focus {
+			color: $red;
+		}
+	}
+}
+
+.modal {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		flex-direction: column;
+		justify-content: space-between;
+		width: 800px;
+		height: 600px;
+		background-color: white;
+		border-radius: 4px;
+	}
+
+	&__header {
+		padding: 30px;
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__form-location {
+		width: 100%;
+	}
+
+	&__city-search {
+		width: 100%;
+		padding: 15px 30px;
+		font-size: 20px;
+		font-weight: 500;
+		border: none;
+		border-top: 1px solid $lightGray;
+		border-bottom: 1px solid $lightGray;
+	}
+
+	&__close {
+		position: absolute;
+		top: -15px;
+		right: -15px;
+		padding: 3px 10px;
+		font-size: 20px;
+		background-color: white;
+		border: none;
+		border-radius: 50%;
+		box-shadow: 0 4px 12px 0 rgba(0,0,0,.1);
+		cursor: pointer;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px;
+	}
+}
+
+.city-choise {
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 300px;
+		margin: 0;
+		padding: 30px;
+		list-style: none;
+		overflow: hidden;
+	}
+
+	&__li {
+		width: 25%;
+		margin-top: 10px;
+
+		&:nth-child(10n + 1) {
+			margin-top: 0;
+		}
+	}
+}
+
+.reg-icon {
+	margin-right: 10px;
+}

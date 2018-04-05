@@ -1,0 +1,55 @@
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    text-align: left;
+    vertical-align: baseline;
+    counter-reset: counter;
+    font-family: 'AvenirNextCyr', sans-serif;
+    font-weight: 400;
+    font-stretch: normal;
+    color: #262626;
+}
+
+a {
+    text-decoration: none;
+    &:hover, &:focus, &:active{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+input{
+    outline: none;
+    &:hover, &:focus, &:active{
+        outline: none;
+    }
+}
+
+textarea{
+    outline: none;
+    &:hover, &:focus, &:active{
+        outline: none;
+    }
+}
+
+.demo-icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
