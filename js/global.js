@@ -16,7 +16,7 @@ $(function() {
 	});
 
 	$(document).on('click', '.js_nextCategories', function() {
-		$('.header__category_hidden').css('display', 'block');
-		$(this).toggleClass('.rotateCategoryBtn');
+		$('.header__categories-wrap').toggleClass('header__categories-wrap_move');
+		$(this).toggleClass('rotateCategoryBtn');
 	})
 })

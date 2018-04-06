@@ -84,7 +84,7 @@ $black: #262626;
 		flex-direction: column;
 		justify-content: space-between;
 		width: 800px;
-		height: 600px;
+		height: 580px;
 		background-color: white;
 		border-radius: 4px;
 	}
@@ -95,6 +95,7 @@ $black: #262626;
 
 	&__title {
 		margin: 0;
+		font-weight: 600;
 	}
 
 	&__form-location {
@@ -140,6 +141,7 @@ $black: #262626;
 		height: 300px;
 		margin: 0;
 		padding: 30px;
+		padding-bottom: 0;
 		list-style: none;
 		overflow: hidden;
 	}
@@ -156,4 +158,9 @@ $black: #262626;
 
 .reg-icon {
 	margin-right: 10px;
+}
+
+.rotateCategoryBtn {
+	transform: rotate(180deg);
+	transition: transform ease 0.2s;
 }

@@ -134,11 +134,25 @@
 		&-wrap {
 			display: flex;
 			align-items: center;
+			overflow: hidden;
+			transition: margin-left ease 0.5s;
+
+			&_move {
+				margin-left: calc(-100% + 30px);
+				transition: margin-left ease 0.5s;
+			}
+		}
+
+		&_overflow {
+			display: flex;
+			align-items: center;
+			overflow: hidden;
 		}
 	}
 
 	&__dropdown {
 		position: absolute;
+		top: 100%;
 		display: none;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -158,9 +172,6 @@
 	}
 
 	&__category {
-		&-wrap {
-			position: relative;
-		}
 
 		&_hidden {
 			display: none;
@@ -174,14 +185,11 @@
 			background-color: white;
 			border: none;
 			cursor: pointer;
+			transition: transform ease 0.2s;
 		}
 
 		&-icon {
 			margin-right: 10px;
 		}
 	}
-}
-
-.rotateCategoryBtn {
-	transform: rotate(180deg);
 }
