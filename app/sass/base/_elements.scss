@@ -1,7 +1,11 @@
 $gray: #a8a8a8;
 $lightGray: #f0f0f0;
 $red: #ff564e;
+$redHover: #ff3838;
+$redActive: #cc2d2d;
 $blue: #4d8eff;
+$blueHover: #1b6efe;
+$blueActive: #185fd9;
 $black: #262626;
 
 .btn {
@@ -34,10 +38,28 @@ $black: #262626;
 		color: white;
 		background-color: $red;
 		border: none;
+
+		&:hover {
+			background-color: $redHover;
+		}
+
+		&:active,
+		&:focus {
+			background-color: $redActive;
+		}
 	}
 
 	&_blue {
 		background-color: $blue;
+
+		&:hover {
+			background-color: $blueHover;
+		}
+
+		&:active,
+		&:focus {
+			background-color: $blueActive;
+		}
 	}
 
 	&_reg {
@@ -162,5 +184,9 @@ $black: #262626;
 
 .rotateCategoryBtn {
 	transform: rotate(180deg);
-	transition: transform ease 0.2s;
+}
+
+.stab {
+	height: 21px;
+	margin-top: 15px;
 }

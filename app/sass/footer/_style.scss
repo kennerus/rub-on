@@ -1,0 +1,110 @@
+.footer {
+
+	&__head {
+		padding: 20px 0;
+	}
+	&__title {
+		margin: 0;
+		font-weight: 500;
+		font-size: 16px;
+		text-align: center;
+		letter-spacing: 0.4px;
+	}
+	
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 0;
+		border-top: 1px solid $lightGray;
+	}
+
+	&__category-list,
+	&__global-list {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 150px;
+	}
+
+	&__category-link {
+		margin-top: 15px;
+		margin-left: 130px;
+
+		&:nth-child(-n + 4) {
+			margin-left: 0;
+		}
+
+		&_global {
+			margin-left: 0;
+		}
+
+		&_faq {
+			margin-top: 0;
+			margin-right: 25px;
+
+			&:last-chid {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&__text {
+		font-weight: 500;
+		color: $gray;
+		letter-spacing: 0.4px;
+
+		&_social {
+			margin-right: 10px;
+		}
+	}
+
+	&__bot {
+		display: flex;
+		align-items: center;
+		padding: 30px 0;
+		border-top: 1px solid $lightGray;
+	}
+
+	&__copyright {
+		margin: 0;
+		margin-right: 60px;
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		
+		&-link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 24px;
+			height: 24px;
+			margin-right: 5px;
+			color: white;
+			text-align: center;
+			border-radius: 50%;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&_vk {
+				background-color: #3a64ff;
+			}
+
+			&_fb {
+				background-color: #1938aa;
+			}
+
+			&_tw {
+				background-color: #5aaefc;
+			}
+
+			&_youtube {
+				background-color: #c80000;
+			}
+		}
+	}
+}
